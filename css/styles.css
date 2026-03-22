@@ -85,3 +85,56 @@ footer {
     text-align: center;
     padding: 15px;
 }
+/* DETAILS SECTION IMPROVEMENT */
+.car-details {
+    background: #161b22;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    border: 1px solid #30363d;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* BIGGER TITLES */
+.car-details h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* BIGGER PRICE */
+.price {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #3fb950;
+    margin-bottom: 15px;
+}
+
+/* FIX IMAGE SIZE (VERY IMPORTANT) */
+.car-details img {
+    width: 100%;
+    max-width: 600px;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+/* SECTION HEADINGS */
+.car-details h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #58a6ff;
+}
+
+/* LIST STYLE */
+.car-details ul {
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 1.8;
+    font-size: 16px;
+}
