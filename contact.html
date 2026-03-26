@@ -1,33 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact</title>
-<link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background: #111;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* SECTION STYLING */
+section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* FORM */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    background: #ff3c00;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* MAP */
+.map {
+    margin-top: 30px;
+}
+
+/* REVIEWS */
+.reviews {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* FAQ */
+.faq {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    background: #111;
+    color: white;
+    padding: 40px;
+}
+
+.cta a {
+    background: #ff3c00;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+</style>
 </head>
 
 <body>
 
-<div class="navbar">
-<a class="logo" href="index.html">Home</a>
-<a href="cars.html">Cars</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
+<header>
+    <h1>Contact Us</h1>
+</header>
+
+<!-- CONTACT FORM -->
+<section>
+    <h2>Book a Test Drive</h2>
+
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+        <select>
+            <option>Select Car</option>
+            <option>BMW M4</option>
+            <option>Mercedes AMG</option>
+            <option>Audi RS5</option>
+        </select>
+
+        <input type="date">
+        <textarea placeholder="Message"></textarea>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+
+    <!-- CONTACT INFO -->
+    <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>📍 Gaborone, Botswana</p>
+        <p>📞 +267 391 2579</p>
+        <p>📧 talib@email.com</p>
+        <p>🕒 Mon - Fri: 7:30AM - 5:30PM</p>
+    </div>
+
+    <!-- MAP -->
+    <div class="map">
+        <h3>Our Location</h3>
+
+        <iframe 
+        src="https://www.google.com/maps?q=-24.6324,25.91849&z=15&output=embed"
+        width="100%" height="300" style="border:0;">
+        </iframe>
+    </div>
+
+    <!-- REVIEWS -->
+    <div class="reviews">
+        <h3>Customer Reviews</h3>
+        <p>"Amazing cars and smooth booking process!"</p>
+        <p>"Loved the test drive experience, very professional."</p>
+        <p>"Best dealership service in Gaborone."</p>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq">
+        <h3>Frequently Asked Questions</h3>
+
+        <p><strong>Do I need a license for a test drive?</strong><br>
+        Yes, a valid driver’s license is required.</p>
+
+        <p><strong>How long is the test drive?</strong><br>
+        Usually between 15–30 minutes.</p>
+
+        <p><strong>Can I book online?</strong><br>
+        Yes, use the form above to book instantly.</p>
+    </div>
+</section>
+
+<!-- CTA -->
+<div class="cta">
+    <h2>Ready to Drive Your Dream Car?</h2>
+    <a href="#">Book Now</a>
 </div>
-
-<div class="container">
-<h1>Contact Us</h1>
-
-<p style="text-align:center;">
-Name: Talib Jameson<br>
-Phone: +267 71234567<br>
-Email: talib@email.com
-</p>
-
-</div>
-
-<footer>
-© 2026 Jameson AutoDrive Cars
-</footer>
 
 </body>
 </html>
