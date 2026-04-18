@@ -288,6 +288,31 @@ body.dark-mode .cta {
     color: #ffffff;
 }
 
+/* ABOUT PAGE SECTIONS */
+.about-story,
+.about-mission {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+/* HEADINGS */
+.about-story h2,
+.about-mission h2 {
+    color: #ff3c00;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.about-story p,
+.about-mission p {
+    font-size: 16px;
+}
+
 /* GOOGLE MAP (OPTIONAL CLEAN LOOK) */
 body.dark-mode iframe {
     filter: brightness(0.85) contrast(1.1);
