@@ -85,7 +85,7 @@ footer {
     text-align: center;
     padding: 15px;
 }
-/* DETAILS SECTION IMPROVEMENT */
+
 .car-details {
     background: #161b22;
     padding: 30px;
@@ -97,14 +97,12 @@ footer {
     margin-right: auto;
 }
 
-/* BIGGER TITLES */
 .car-details h2 {
     font-size: 28px;
     text-align: center;
     margin-bottom: 10px;
 }
 
-/* BIGGER PRICE */
 .price {
     text-align: center;
     font-size: 22px;
@@ -113,7 +111,6 @@ footer {
     margin-bottom: 15px;
 }
 
-/* FIX IMAGE SIZE (VERY IMPORTANT) */
 .car-details img {
     width: 100%;
     max-width: 600px;
@@ -124,14 +121,12 @@ footer {
     border-radius: 10px;
 }
 
-/* SECTION HEADINGS */
 .car-details h3 {
     margin-top: 20px;
     font-size: 20px;
     color: #58a6ff;
 }
 
-/* LIST STYLE */
 .car-details ul {
     margin-left: 20px;
     margin-top: 10px;
@@ -153,9 +148,6 @@ footer {
 .test-drive-btn:hover {
     background-color: #cc3000;
 }
-/* =========================
-   DARK MODE THEME (CAR SITE)
-   ========================= */
 
 body.dark-mode {
     background-color: #121212;
@@ -168,12 +160,9 @@ body.dark-mode header {
     color: #fff;
 }
 
-/* MAIN SECTIONS */
 body.dark-mode section {
     background-color: #181818;
 }
-
-/* FORMS + BOXES */
 body.dark-mode form,
 body.dark-mode .contact-info,
 body.dark-mode .reviews,
@@ -182,8 +171,6 @@ body.dark-mode .faq {
     color: #fff;
     border-radius: 10px;
 }
-
-/* INPUT FIELDS */
 body.dark-mode input,
 body.dark-mode textarea,
 body.dark-mode select {
@@ -192,55 +179,43 @@ body.dark-mode select {
     border: 1px solid #444;
 }
 
-/* PLACEHOLDER TEXT */
 body.dark-mode input::placeholder,
 body.dark-mode textarea::placeholder {
     color: #bbb;
 }
 
-/* BUTTONS (KEEP YOUR BRAND ORANGE) */
 body.dark-mode button {
     background-color: #ff3c00;
     color: #fff;
 }
 
-/* LINKS */
 body.dark-mode a {
     color: #ff3c00;
 }
 
-/* CTA SECTION */
 body.dark-mode .cta {
     background-color: #111;
     color: #fff;
 }
 
-/* MAP AREA (optional polish) */
 body.dark-mode iframe {
     filter: brightness(0.8) contrast(1.1);
 }
-/* =========================
-   CONTACT PAGE DARK MODE
-   ========================= */
 
-/* PAGE BACKGROUND */
 body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
 
-/* HEADER */
 body.dark-mode header {
     background-color: #111;
     color: #ffffff;
 }
 
-/* MAIN SECTIONS */
 body.dark-mode section {
     background-color: #181818;
 }
 
-/* FORM + BOXES */
 body.dark-mode form,
 body.dark-mode .contact-info,
 body.dark-mode .reviews,
@@ -250,7 +225,6 @@ body.dark-mode .faq {
     border-radius: 10px;
 }
 
-/* INPUT FIELDS */
 body.dark-mode input,
 body.dark-mode textarea,
 body.dark-mode select {
@@ -259,61 +233,108 @@ body.dark-mode select {
     border: 1px solid #444;
 }
 
-/* INPUT PLACEHOLDER */
 body.dark-mode input::placeholder,
 body.dark-mode textarea::placeholder {
     color: #bbbbbb;
 }
-
-/* BUTTONS (KEEP YOUR ORANGE BRAND) */
 body.dark-mode button {
     background-color: #ff3c00;
     color: #ffffff;
-    border: none;
-}
-
-/* BUTTON HOVER */
+    border: none;}
 body.dark-mode button:hover {
     background-color: #cc3000;
 }
-
-/* LINKS */
 body.dark-mode a {
     color: #ff3c00;
 }
-
-/* CTA SECTION */
 body.dark-mode .cta {
     background-color: #111;
     color: #ffffff;
 }
-
-/* ABOUT PAGE SECTIONS */
-.about-story,
-.about-mission {
-    background-color: #1e1e1e;
-    color: #ffffff;
-    padding: 30px;
-    margin: 30px auto;
-    max-width: 900px;
-    border-radius: 10px;
-    line-height: 1.6;
-}
-
-/* HEADINGS */
-.about-story h2,
-.about-mission h2 {
-    color: #ff3c00;
-    margin-bottom: 15px;
-}
-
-/* TEXT */
-.about-story p,
-.about-mission p {
-    font-size: 16px;
-}
-
-/* GOOGLE MAP (OPTIONAL CLEAN LOOK) */
 body.dark-mode iframe {
     filter: brightness(0.85) contrast(1.1);
+}
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    background: #ff3c00;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+
+.contact-info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+.map {
+    margin-top: 30px;
+}
+
+
+.reviews {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.faq {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.cta {
+    text-align: center;
+    background: #111;
+    color: white;
+    padding: 40px;
+}
+
+.cta a {
+    background: #ff3c00;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
 }
