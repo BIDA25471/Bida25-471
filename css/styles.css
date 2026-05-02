@@ -254,3 +254,32 @@ body.dark-mode .cta {
 body.dark-mode iframe {
     filter: brightness(0.85) contrast(1.1);
 }
+/* NAVBAR LAYOUT */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #111;
+}
+
+/* LOGO */
+.logo img {
+    height: 50px;   /* controls logo size */
+}
+
+/* NAV LINKS */
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+}
