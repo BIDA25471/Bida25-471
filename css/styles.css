@@ -1,6 +1,3 @@
-/* =========================
-   GLOBAL STYLING
-========================= */
 
 *{
     margin: 0;
@@ -9,10 +6,24 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background: #0b0b0b;
+    background-color: #0b0b0b;
     color: #f5f5f5;
     line-height: 1.6;
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+section{
+    padding: 70px 8%;
 }
 
 /* =========================
@@ -20,15 +31,16 @@ body{
 ========================= */
 
 nav{
+    width: 100%;
     background: #111;
     padding: 18px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #222;
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid #222;
 }
 
 .logo{
@@ -40,15 +52,15 @@ nav{
 
 nav ul{
     display: flex;
+    gap: 25px;
     list-style: none;
-    gap: 30px;
 }
 
 nav ul li a{
-    text-decoration: none;
     color: #ddd;
+    text-decoration: none;
     transition: 0.3s;
-    font-weight: 500;
+    font-size: 16px;
 }
 
 nav ul li a:hover{
@@ -61,9 +73,9 @@ nav ul li a:hover{
 
 .hero{
     height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.6),
-    rgba(0,0,0,0.7)),
-    url('images/hero.jpg') center/cover;
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+    url('images/hero.jpg') center/cover no-repeat;
 
     display: flex;
     justify-content: center;
@@ -76,7 +88,6 @@ nav ul li a:hover{
     font-size: 60px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    letter-spacing: 3px;
 }
 
 .hero-content p{
@@ -91,9 +102,9 @@ nav ul li a:hover{
 
 .btn{
     display: inline-block;
-    padding: 14px 30px;
     background: #00bfff;
     color: white;
+    padding: 14px 30px;
     text-decoration: none;
     border-radius: 8px;
     transition: 0.3s;
@@ -103,18 +114,17 @@ nav ul li a:hover{
 .btn:hover{
     background: #009acd;
     transform: translateY(-3px);
-    box-shadow: 0 0 15px rgba(0,191,255,0.5);
+    box-shadow: 0 0 15px rgba(0,191,255,0.4);
 }
 
 /* =========================
-   SECTION TITLES
+   TITLES
 ========================= */
 
 .section-title{
     text-align: center;
     font-size: 40px;
-    margin: 70px 0 40px;
-    color: white;
+    margin-bottom: 50px;
 }
 
 /* =========================
@@ -123,32 +133,29 @@ nav ul li a:hover{
 
 .car-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    padding: 0 8% 80px;
 }
 
 .car-card{
     background: #151515;
     border-radius: 15px;
     overflow: hidden;
-    transition: 0.3s;
     border: 1px solid #222;
+    transition: 0.3s;
 }
 
 .car-card:hover{
     transform: translateY(-8px);
-    box-shadow: 0 0 25px rgba(0,191,255,0.15);
+    box-shadow: 0 0 20px rgba(0,191,255,0.15);
 }
 
 .car-card img{
-    width: 100%;
     height: 220px;
-    object-fit: cover;
     transition: 0.3s;
 }
 
-.car-card img:hover{
+.car-card:hover img{
     transform: scale(1.05);
 }
 
@@ -177,7 +184,6 @@ nav ul li a:hover{
 }
 
 .details-image img{
-    width: 100%;
     border-radius: 15px;
 }
 
@@ -215,7 +221,6 @@ nav ul li a:hover{
     text-align: center;
     margin-bottom: 30px;
     font-size: 36px;
-    color: white;
 }
 
 .booking-form{
@@ -240,9 +245,9 @@ nav ul li a:hover{
 .booking-form input:focus,
 .booking-form select:focus,
 .booking-form textarea:focus{
+    outline: none;
     border-color: #00bfff;
     box-shadow: 0 0 10px rgba(0,191,255,0.3);
-    outline: none;
 }
 
 .booking-form textarea{
@@ -252,9 +257,9 @@ nav ul li a:hover{
 
 .booking-form button{
     padding: 15px;
-    background: #00bfff;
     border: none;
     border-radius: 10px;
+    background: #00bfff;
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -274,10 +279,10 @@ nav ul li a:hover{
 .contact-container{
     width: 90%;
     max-width: 700px;
-    margin: 70px auto;
+    margin: 60px auto;
     background: #151515;
     padding: 40px;
-    border-radius: 15px;
+    border-radius: 18px;
     border: 1px solid #222;
 }
 
@@ -286,37 +291,48 @@ nav ul li a:hover{
     margin-bottom: 30px;
 }
 
-.contact-container input,
-.contact-container textarea{
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    background: #0d0d0d;
-    border: 1px solid #333;
-    color: white;
-    border-radius: 8px;
-    outline: none;
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.contact-container textarea{
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 15px;
+    background: #0d0d0d;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline: none;
+    border-color: #00bfff;
+    box-shadow: 0 0 10px rgba(0,191,255,0.3);
+}
+
+.contact-form textarea{
     resize: none;
     height: 150px;
 }
 
-.contact-container button{
-    width: 100%;
+.contact-form button{
     padding: 15px;
     border: none;
+    border-radius: 10px;
     background: #00bfff;
     color: white;
-    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 16px;
-    font-weight: bold;
 }
 
-.contact-container button:hover{
+.contact-form button:hover{
     background: #009acd;
 }
 
@@ -328,8 +344,8 @@ footer{
     background: #111;
     padding: 30px;
     text-align: center;
-    border-top: 1px solid #222;
     color: #888;
+    border-top: 1px solid #222;
 }
 
 /* =========================
@@ -344,9 +360,9 @@ footer{
     }
 
     nav ul{
-        gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
     }
 
     .hero-content h1{
@@ -363,5 +379,10 @@ footer{
 
     .details-text h2{
         font-size: 32px;
+    }
+
+    .booking-container,
+    .contact-container{
+        padding: 25px;
     }
 }
