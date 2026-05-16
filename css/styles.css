@@ -1,384 +1,105 @@
-
-*{
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Arial;
+    background-color: #0d1117;
+    color: #e6edf3;
 }
 
-/* BODY */
-
-body{
-    background: #0b0b0b;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+.navbar {
+    background-color: #161b22;
+    padding: 15px;
+    text-align: center;
 }
 
-/* IMAGES */
-
-img{
-    max-width: 100%;
-    display: block;
-}
-
-/* LINKS */
-
-a{
+.navbar a {
+    color: #e6edf3;
+    margin: 10px;
     text-decoration: none;
-    color: inherit;
-}
-
-/* =========================
-   NAVBAR
-========================= */
-
-nav{
-    width: 100%;
-    background: #111;
-    padding: 18px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #222;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-/* LOGO */
-
-.logo{
-    font-size: 28px;
     font-weight: bold;
-    color: white;
-    letter-spacing: 2px;
 }
 
-.logo img{
-    height: 60px;
-    width: auto;
-    object-fit: contain;
+.navbar a:hover {
+    color: #58a6ff;
 }
 
-/* NAV LINKS */
-
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 25px;
+.logo {
+    color: #58a6ff;
+    font-size: 20px;
 }
 
-nav ul li a{
-    color: #ddd;
-    transition: 0.3s;
-    font-size: 16px;
-}
-
-nav ul li a:hover{
-    color: #00bfff;
-}
-
-/* =========================
-   HERO SECTION
-========================= */
-
-.hero{
-    height: 90vh;
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('../images/banner.jpg');
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-
-    padding: 20px;
 }
 
-.hero-content h1{
-    font-size: 60px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+.container {
+    padding: 30px;
 }
 
-.hero-content p{
-    font-size: 20px;
-    color: #ccc;
-    margin-bottom: 30px;
-}
-
-/* =========================
-   BUTTONS
-========================= */
-
-button,
-.btn{
-
-    padding: 14px 30px;
-    background: #00bfff;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-button:hover,
-.btn:hover{
-
-    background: #009acd;
-    transform: translateY(-2px);
-    box-shadow: 0 0 15px rgba(0,191,255,0.4);
-}
-
-/* =========================
-   SECTIONS
-========================= */
-
-section{
-    padding: 70px 8%;
-}
-
-/* TITLES */
-
-h1,h2,h3{
-    margin-bottom: 15px;
-}
-
-.section-title{
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 50px;
-}
-
-/* =========================
-   CARDS / CARS
-========================= */
-
-.car-container,
-.cards,
-.container{
-
+.car-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 30px;
-}
-
-/* CARD */
-
-.car-card,
-.card{
-
-    background: #151515;
-    border-radius: 15px;
-    overflow: hidden;
-    border: 1px solid #222;
-    transition: 0.3s;
-}
-
-.car-card:hover,
-.card:hover{
-
-    transform: translateY(-8px);
-    box-shadow: 0 0 20px rgba(0,191,255,0.15);
-}
-
-/* CARD IMAGES */
-
-.car-card img,
-.card img{
-
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    transition: 0.3s;
-}
-
-.car-card:hover img,
-.card:hover img{
-
-    transform: scale(1.05);
-}
-
-/* CARD CONTENT */
-
-.car-info,
-.card-content{
-
-    padding: 20px;
-}
-
-.car-info p,
-.card-content p{
-
-    color: #bbb;
-}
-
-/* =========================
-   FORMS
-========================= */
-
-form{
-
-    width: 100%;
-    max-width: 700px;
-    margin: 40px auto;
-
-    background: #151515;
-
-    padding: 40px;
-
-    border-radius: 15px;
-
-    border: 1px solid #222;
-
-    display: flex;
-    flex-direction: column;
-
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     gap: 20px;
 }
 
-/* INPUTS */
-
-input,
-select,
-textarea{
-
-    width: 100%;
-
-    padding: 15px;
-
-    background: #0d0d0d;
-
-    border: 1px solid #333;
-
+.car {
+    background-color: #161b22;
     border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #30363d;
+}
 
+.car img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.car h3, .car p {
+    margin: 10px;
+}
+
+.car p {
+    color: #3fb950;
+    font-weight: bold;
+}
+
+.btn {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background: #238636;
     color: white;
-
-    font-size: 16px;
-
-    transition: 0.3s;
-}
-
-/* INPUT FOCUS */
-
-input:focus,
-select:focus,
-textarea:focus{
-
-    outline: none;
-
-    border-color: #00bfff;
-
-    box-shadow: 0 0 10px rgba(0,191,255,0.3);
-}
-
-/* TEXTAREA */
-
-textarea{
-    resize: none;
-    min-height: 140px;
-}
-
-/* =========================
-   DETAILS PAGE
-========================= */
-
-.details-container{
-
-    max-width: 1200px;
-
-    margin: 50px auto;
-
-    padding: 20px;
-}
-
-.details-image img{
-
-    border-radius: 15px;
-}
-
-.details-text{
-
-    margin-top: 30px;
-}
-
-.details-text h2{
-
-    font-size: 42px;
-}
-
-.details-text p{
-
-    font-size: 18px;
-
-    color: #ccc;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-
-    background: #111;
-
-    padding: 30px;
-
     text-align: center;
-
-    border-top: 1px solid #222;
-
-    color: #888;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
-
-@media(max-width: 768px){
-
-    nav{
-
-        flex-direction: column;
-
-        gap: 15px;
-    }
-
-    nav ul{
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
-
-    .hero-content h1{
-
-        font-size: 38px;
-    }
-
-    .hero-content p{
-
-        font-size: 18px;
-    }
-
-    .section-title{
-
-        font-size: 32px;
-    }
-
-    form{
-
-        padding: 25px;
-    }
-
-    .details-text h2{
-
-        font-size: 32px;
-    }
+footer {
+    background: #161b22;
+    text-align: center;
+    padding: 15px;
 }
-```
+.car-details {
+    margin-bottom: 50px;
+    padding: 20px;
+    background: #161b22;
+    border-radius: 10px;
+}
+
+.car-details img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.price {
+    color: #3fb950;
+    font-size: 20px;
+    font-weight: bold;
+}
