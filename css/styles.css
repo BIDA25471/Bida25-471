@@ -120,3 +120,136 @@ footer {
     margin-left: 20px;
     font-size: 16px;
 }
+/* =========================
+   CONTACT PAGE MATCH FIX
+   ========================= */
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* INTRO */
+.intro {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* GRID LAYOUT */
+.contact-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* FORM */
+.contact-grid form {
+    flex: 1 1 500px;
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: white;
+}
+
+/* BUTTON */
+form button {
+    background: #ff3c00;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    flex: 1 1 300px;
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* MAP */
+.map iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* REVIEWS + FAQ */
+.reviews,
+.faq {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* HEADINGS */
+h2, h3 {
+    color: #ff3c00;
+}
+
+/* CTA */
+.cta {
+    background: #111;
+    text-align: center;
+    padding: 40px;
+}
+
+.cta a {
+    background: #ff3c00;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .contact-grid {
+        flex-direction: column;
+    }
+}
+/* DETAILS PAGE LAYOUT */
+.car-details {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.car-details img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* BUTTON */
+.test-drive-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff3c00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
